@@ -1,0 +1,29 @@
+import sys
+
+
+usr1=input("Player 1 Either choose Rock,Paper or Scissors")
+usr2=input("Player 2 Either choose Rock,Paper or Scissors")
+
+def compare(u1,u2):
+    if(u1==u2):
+        print("Tie")
+    elif u1=="Rock":
+        if u2=="Scissors":
+            print("Rock Wins")
+        else:
+            print("Paper Wins")
+
+    elif u1=="Paper":
+        if u2=="Rock":
+            print("Paper Wins")
+        else:
+            print("Scissors Wins")
+    elif u1=="Scissors":
+        if u2=="Rock":
+            print("Rock Wins")
+        else:
+            print("Scissors Wins")
+    else:
+        print("Wrong Input")
+        sys.exit()
+compare(usr1,usr2)
