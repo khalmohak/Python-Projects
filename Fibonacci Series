@@ -1,0 +1,16 @@
+n=int(input("Enter Sequence length"))
+
+l=[1,1]
+def fibonacci():
+    if(n==1):
+        print([1])
+    elif(n==2):
+        print(l)
+    else:
+
+        for i in range(2,n):
+            f=l[i-1] + l[i-2]
+            l.append(f)
+
+        print(l)
+fibonacci()
