@@ -1,0 +1,11 @@
+string=input("Enter a sentence here")
+print(string)
+string1=string.split()
+
+n=string.__len__()
+string2=[]
+no=string1[::-1]
+
+for i in no:
+    print(i,end=" ")
+print()
